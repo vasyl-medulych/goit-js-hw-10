@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+label {
+  letter-spacing: 0.04em;
+}
+
+.delay input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-block: 0;
+  padding-inline: 0;
+  padding-left: 4px;
+  outline: none;
+  min-width: 354px;
+  height: 38px;
+}
+
+.delay input:hover,
+fieldset:hover {
+  border: 1px solid #000000;
+}
+
+.delay input:active {
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  border: 1px solid #808080;
+  max-width: 332px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  height: 56px;
+}
+
+legend {
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+}
+
+.radio {
+  padding: 12px 48px 8px;
+}
+
+.submit {
+  border-radius: 8px;
+  width: 360px;
+}

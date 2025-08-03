@@ -38,10 +38,8 @@ const options = {
         message: 'Please choose a date in the future',
       });
       btnElem.disabled = true;
-      console.log(btnElem.disabled);
     } else {
       btnElem.disabled = false;
-      console.log(btnElem.disabled);
       userSelectedDate = selectedDates;
     }
   },
