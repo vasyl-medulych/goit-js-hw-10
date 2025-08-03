@@ -26,6 +26,9 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const date = new Date(selectedDates);
+    if (intervalId) {
+      btnElem.disabled = true;
+    }
     if (date.getTime() - Date.now() <= 0) {
       iziToast.show({
         position: 'topRight',
@@ -38,10 +41,8 @@ const options = {
       console.log(btnElem.disabled);
     } else {
       btnElem.disabled = false;
+      console.log(btnElem.disabled);
       userSelectedDate = selectedDates;
-    }
-    if (intervalId) {
-      btnElem.disabled = true;
     }
   },
 };
@@ -60,6 +61,7 @@ function startCountdown() {
     timerFields.days.textContent = addLeadingZero(countdown).daysStr;
     if (diff < 1000) {
       clearInterval(intervalId);
+      inputElem.disabled = false;
     }
   }, 1000);
 }
