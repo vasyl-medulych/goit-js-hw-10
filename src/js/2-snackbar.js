@@ -1,7 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const formElem = document.querySelector('.form');
+const formElem = document.querySelector('.form-snackbar');
 formElem.addEventListener('submit', onBtnHendle);
 
 function onBtnHendle(e) {
