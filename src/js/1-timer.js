@@ -25,7 +25,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    const date = new Date(selectedDates);
+    const date = new Date(selectedDates[0]);
     if (intervalId) {
       btnElem.disabled = true;
     }
@@ -40,7 +40,7 @@ const options = {
       btnElem.disabled = true;
     } else {
       btnElem.disabled = false;
-      userSelectedDate = selectedDates;
+      userSelectedDate = selectedDates[0];
     }
   },
 };
